@@ -69,7 +69,6 @@ public class MultiClassEventListenerInspector : Editor
         SerializedProperty currentListener = listeners.GetArrayElementAtIndex(listenerNumber);
         SerializedProperty gameEvent = currentListener.FindPropertyRelative("Event");
         SerializedProperty response = currentListener.FindPropertyRelative("Response");
-        SerializedProperty colourProperty = gameEvent.FindPropertyRelative("inspectorColour");
 
         // set the background colour to the colour assigned in the game event asset
         Color newColour = Color.grey;
