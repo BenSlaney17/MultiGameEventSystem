@@ -33,7 +33,7 @@ public class MultiGameEventListener : MonoBehaviour
         // unregister all listeners
         for (int i = 0; i < listeners.Count; i++)
         {
-            listeners[i].Event.RegisterListener(listeners[i]);
+            listeners[i].Event.UnregisterListener(listeners[i]);
         }
     }
 
